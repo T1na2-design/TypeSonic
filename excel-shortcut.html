@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Keyboard Shortcuts | Type Sonic Cheat Sheet</title>
+    <meta name="description" content="Master Microsoft Excel with 100+ keyboard shortcuts. Complete cheat sheet for Windows and Mac. Boost your spreadsheet speed.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+        }
+        
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .sonic-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .intro-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left: 5px solid #FF6B6B;
+        }
+        
+        .intro-card h2 {
+            color: #FF6B6B;
+            margin-bottom: 15px;
+        }
+        
+        .tip-box {
+            background: #fff5f5;
+            border-left: 4px solid #FF6B6B;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .shortcut-section {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-bottom: 3px solid #4ECDC4;
+        }
+        
+        .shortcut-section h2 {
+            color: #333;
+            border-bottom: 2px solid #4ECDC4;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th {
+            background: #4ECDC4;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        tr:hover {
+            background: #f0fcfb;
+        }
+        
+        kbd {
+            background: #333;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            display: inline-block;
+            margin: 2px;
+            box-shadow: 0 2px 0 #111;
+            border-bottom: 2px solid #FF6B6B;
+        }
+        
+        .note {
+            background: #fff5f5;
+            border-left: 4px solid #FF6B6B;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .note strong {
+            color: #FF6B6B;
+        }
+        
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .guide-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            border: 2px solid transparent;
+            transition: transform 0.2s, border-color 0.2s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .guide-card:hover {
+            transform: translateY(-5px);
+            border-color: #FF6B6B;
+        }
+        
+        .guide-card span {
+            font-size: 2.5em;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .guide-card h4 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        
+        .guide-card p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+            color: white;
+            padding: 50px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .cta-section h3 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        .cta-section p {
+            font-size: 1.3em;
+            margin-bottom: 25px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #FF6B6B;
+            padding: 15px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3em;
+            transition: transform 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 40px;
+        }
+        
+        .footer span {
+            color: #FF6B6B;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2.2em;
+            }
+            
+            table {
+                font-size: 0.9em;
+            }
+            
+            td, th {
+                padding: 8px;
+            }
+            
+            .cta-section {
+                padding: 30px 20px;
+            }
+            
+            .cta-section h3 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="sonic-badge">⚡ TYPE SONIC SHORTCUTS</div>
+        <h1>Excel Keyboard Shortcuts</h1>
+        <p>100+ shortcuts • Windows & Mac • Printable cheat sheet</p>
+    </div>
+    
+    <div class="container">
+        <div class="intro-card">
+            <h2>📊 Master Excel Like a Pro</h2>
+            <p>Excel has over 200 keyboard shortcuts. Learning just the top 20 will save you hours every week. These are the ones power users actually use.</p>
+            
+            <div class="tip-box">
+                <h3>💡 Pro Tip: The Alt Key</h3>
+                <p>Press <kbd>Alt</kbd> (Windows) or <kbd>⌘</kbd> (Mac) to see key tips for every ribbon command. Follow the letters that appear to execute any command without the mouse.</p>
+            </div>
+            
+            <div class="note">
+                <strong>🍎 Mac users:</strong> Replace <kbd>Ctrl</kbd> with <kbd>⌘ Command</kbd> in most shortcuts
+            </div>
+        </div>
+        
+        <!-- Navigation & Selection -->
+        <div class="shortcut-section">
+            <h2>📍 Navigation & Selection</h2>
+            <table>
+                <tr>
+                    <th>Shortcut</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>→</kbd></td>
+                    <td>End of row (last cell with data)</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>↓</kbd></td>
+                    <td>End of column (last cell with data)</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Home</kbd></td>
+                    <td>Go to cell A1</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>End</kbd></td>
+                    <td>Go to last used cell</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd></td>
+                    <td>Select to end of row</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd></td>
+                    <td>Select to end of column</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Space</kbd></td>
+                    <td>Select entire column</td>
+                </tr>
+                <tr>
+                    <td><kbd>Shift</kbd> + <kbd>Space</kbd></td>
+                    <td>Select entire row</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>A</kbd></td>
+                    <td>Select all</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>G</kbd></td>
+                    <td>Go To dialog</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Editing -->
+        <div class="shortcut-section">
+            <h2>✏️ Editing Cells</h2>
+            <table>
+                <tr>
+                    <th>Shortcut</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td><kbd>F2</kbd></td>
+                    <td>Edit active cell</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>X</kbd></td>
+                    <td>Cut</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>C</kbd></td>
+                    <td>Copy</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>V</kbd></td>
+                    <td>Paste</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>V</kbd></td>
+                    <td>Paste Special dialog</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>D</kbd></td>
+                    <td>Fill down (copy from cell above)</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>R</kbd></td>
+                    <td>Fill right (copy from left)</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Z</kbd></td>
+                    <td>Undo</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Y</kbd></td>
+                    <td>Redo</td>
+                </tr>
+                <tr>
+                    <td><kbd>Delete</kbd></td>
+                    <td>Clear contents</td>
+                </tr>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>Enter</kbd></td>
+                    <td>Start new line in same cell</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Formatting -->
+        <div class="shortcut-section">
+            <h2>🎨 Formatting</h2>
+            <table>
+                <tr>
+                    <th>Shortcut</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>1</kbd></td>
+                    <td>Format Cells dialog</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>B</kbd></td>
+                    <td>Bold</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>I</kbd></td>
+                    <td>Italic</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>U</kbd></td>
+                    <td>Underline</td>
+                </tr>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>H</kbd> + <kbd>H</kbd></td>
+                    <td>Fill color</td>
+                </tr>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>H</kbd> + <kbd>B</kbd></td>
+                    <td>Add border</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>%</kbd></td>
+                    <td>Percentage format</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>$</kbd></td>
+                    <td>Currency format</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>#</kbd></td>
+                    <td>Date format</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>@</kbd></td>
+                    <td>Time format</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Formulas -->
+        <div class="shortcut-section">
+            <h2>🧮 Formulas & Functions</h2>
+            <table>
+                <tr>
+                    <th>Shortcut</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td><kbd>=</kbd></td>
+                    <td>Start a formula</td>
+                </tr>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>=</kbd></td>
+                    <td>AutoSum</td>
+                </tr>
+                <tr>
+                    <td><kbd>Shift</kbd> + <kbd>F3</kbd></td>
+                    <td>Insert function dialog</td>
+                </tr>
+                <tr>
+                    <td><kbd>F4</kbd></td>
+                    <td>Toggle absolute/relative references ($A$1 vs A1)</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd></td>
+                    <td>Array formula</td>
+                </tr>
+                <tr>
+                    <td><kbd>F9</kbd></td>
+                    <td>Calculate all worksheets</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>`</kbd></td>
+                    <td>Show formulas (toggle)</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Rows & Columns -->
+        <div class="shortcut-section">
+            <h2>📏 Rows & Columns</h2>
+            <table>
+                <tr>
+                    <th>Shortcut</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>+</kbd></td>
+                    <td>Insert row/column</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>-</kbd></td>
+                    <td>Delete row/column</td>
+                </tr>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>H</kbd> + <kbd>O</kbd> + <kbd>R</kbd></td>
+                    <td>Rename sheet</td>
+                </tr>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>H</kbd> + <kbd>O</kbd> + <kbd>I</kbd></td>
+                    <td>Auto-fit column width</td>
+                </tr>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>H</kbd> + <kbd>O</kbd> + <kbd>A</kbd></td>
+                    <td>Auto-fit row height</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>9</kbd></td>
+                    <td>Hide row</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>0</kbd></td>
+                    <td>Hide column</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Pivot Tables & Charts -->
+        <div class="shortcut-section">
+            <h2>📊 Pivot Tables & Charts</h2>
+            <table>
+                <tr>
+                    <th>Shortcut</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>N</kbd> + <kbd>V</kbd></td>
+                    <td>Create PivotTable</td>
+                </tr>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>F1</kbd></td>
+                    <td>Create chart in new sheet</td>
+                </tr>
+                <tr>
+                    <td><kbd>F11</kbd></td>
+                    <td>Create chart as new sheet</td>
+                </tr>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>JT</kbd></td>
+                    <td>PivotTable field list</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Workbook Navigation -->
+        <div class="shortcut-section">
+            <h2>📁 Workbook Navigation</h2>
+            <table>
+                <tr>
+                    <th>Shortcut</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Page Down</kbd></td>
+                    <td>Next sheet</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Page Up</kbd></td>
+                    <td>Previous sheet</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>F6</kbd></td>
+                    <td>Next workbook window</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>F4</kbd></td>
+                    <td>Close workbook</td>
+                </tr>
+                <tr>
+                    <td><kbd>F12</kbd></td>
+                    <td>Save As</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Other Guides Navigation -->
+        <div style="margin: 40px 0;">
+            <h3 style="text-align: center; margin-bottom: 30px;">📚 More Shortcut Guides</h3>
+            <div class="guide-grid">
+                <a href="gmail-shortcuts.html" class="guide-card">
+                    <span>📧</span>
+                    <h4>Gmail</h4>
+                    <p>90+ shortcuts</p>
+                </a>
+                <a href="photoshop-shortcuts.html" class="guide-card">
+                    <span>🎨</span>
+                    <h4>Photoshop</h4>
+                    <p>70+ shortcuts</p>
+                </a>
+                <a href="slack-shortcuts.html" class="guide-card">
+                    <span>💬</span>
+                    <h4>Slack</h4>
+                    <p>50+ shortcuts</p>
+                </a>
+                <a href="zoom-shortcuts.html" class="guide-card">
+                    <span>📹</span>
+                    <h4>Zoom</h4>
+                    <p>40+ shortcuts</p>
+                </a>
+                <a href="windows-shortcuts.html" class="guide-card">
+                    <span>🪟</span>
+                    <h4>Windows</h4>
+                    <p>80+ shortcuts</p>
+                </a>
+            </div>
+        </div>
+        
+        <!-- CTA to Typing Test -->
+        <div class="cta-section">
+            <h3>⚡ Ready to type at sonic speed?</h3>
+            <p>Take the free Type Sonic speed test • 60 seconds • See your WPM</p>
+            <a href="index.html" class="cta-button">🚀 Start Typing Test</a>
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 <span>⚡ TYPE SONIC</span> • Free typing tests & keyboard shortcut guides</p>
+            <p style="margin-top: 10px;">Excel shortcuts • Gmail shortcuts • Photoshop shortcuts • Slack shortcuts • Zoom shortcuts • Windows shortcuts</p>
+        </div>
+    </div>
+</body>
+</html>
