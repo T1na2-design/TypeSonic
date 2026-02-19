@@ -6,6 +6,7 @@
     <title>Type Sonic | Free Typing Speed Test</title>
     <meta name="description" content="Test your typing speed with Type Sonic. Free 60-second typing test with WPM and accuracy tracking. Practice keyboard shortcuts and type faster.">
     <style>
+        /* Same styles as before - keeping them embedded for simplicity */
         * {
             margin: 0;
             padding: 0;
@@ -165,63 +166,105 @@
             color: white;
         }
         
-        .shortcut-teaser {
-            margin-top: 40px;
-            padding: 25px;
-            background: linear-gradient(135deg, #fff5f5 0%, #f0fcfb 100%);
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 40px 0 20px;
+        }
+        
+        .guide-card {
+            background: #f8f9fa;
+            padding: 20px 15px;
             border-radius: 10px;
             text-align: center;
-            border: 2px dashed #4ECDC4;
-        }
-        
-        .shortcut-teaser h3 {
-            color: #333;
-            margin-bottom: 10px;
-            font-size: 1.5em;
-        }
-        
-        .shortcut-teaser p {
-            color: #666;
-            margin-bottom: 15px;
-        }
-        
-        .shortcut-link {
-            display: inline-block;
-            padding: 12px 30px;
-            background: #FF6B6B;
-            color: white;
             text-decoration: none;
-            border-radius: 50px;
+            color: #333;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+            display: block;
+        }
+        
+        .guide-card:hover {
+            transform: translateY(-5px);
+            border-color: #FF6B6B;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .guide-card img {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 10px;
+        }
+        
+        .guide-card span {
+            display: block;
             font-weight: 600;
-            transition: transform 0.2s;
         }
         
-        .shortcut-link:hover {
-            background: #ff5252;
-            transform: scale(1.05);
+        .guide-card small {
+            color: #666;
+            font-size: 0.8em;
         }
         
-        kbd {
-            background: #333;
-            color: white;
-            padding: 3px 8px;
-            border-radius: 5px;
-            font-size: 0.9em;
-            font-family: monospace;
-            margin: 0 3px;
-            border-bottom: 2px solid #666;
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0 30px;
         }
         
-        .sonic-badge {
+        .game-card {
+            background: linear-gradient(135deg, #fff5f5, #f0fcfb);
+            padding: 20px 15px;
+            border-radius: 10px;
             text-align: center;
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #999;
+            text-decoration: none;
+            color: #333;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+            display: block;
         }
         
-        .sonic-badge span {
+        .game-card:hover {
+            transform: translateY(-5px);
+            border-color: #4ECDC4;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .game-card img {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 10px;
+        }
+        
+        .game-card span {
+            display: block;
+            font-weight: 600;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #f0f0f0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .footer a {
             color: #FF6B6B;
-            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .attribution {
+            margin-top: 15px;
+            font-size: 0.8em;
+            color: #999;
         }
         
         @media (max-width: 600px) {
@@ -236,11 +279,6 @@
             .stats {
                 flex-direction: column;
                 gap: 15px;
-            }
-            
-            .passage-box {
-                font-size: 1.1em;
-                padding: 20px;
             }
         }
     </style>
@@ -276,14 +314,83 @@
             <button id="resetBtn">🔄 Reset</button>
         </div>
         
-        <div class="shortcut-teaser">
-            <h3>🔥 Learn Gmail Shortcuts</h3>
-            <p>Master <kbd>c</kbd> (compose), <kbd>e</kbd> (archive), and 90+ more shortcuts</p>
-            <a href="gmail-shortcuts.html" class="shortcut-link">📧 View Gmail Guide →</a>
+        <h3 style="margin: 30px 0 15px;">📚 Shortcut Guides</h3>
+        <div class="guides-grid">
+            <a href="gmail-shortcuts.html" class="guide-card">
+                <img src="icons/gmail-icon.png" alt="Gmail">
+                <span>Gmail</span>
+                <small>90+ shortcuts</small>
+            </a>
+            <a href="outlook-shortcuts.html" class="guide-card">
+                <img src="icons/outlook-icon.png" alt="Outlook">
+                <span>Outlook</span>
+                <small>80+ shortcuts</small>
+            </a>
+            <a href="excel-shortcuts.html" class="guide-card">
+                <img src="icons/excel-icon.png" alt="Excel">
+                <span>Excel</span>
+                <small>100+ shortcuts</small>
+            </a>
+            <a href="word-shortcuts.html" class="guide-card">
+                <img src="icons/word-icon.png" alt="Word">
+                <span>Word</span>
+                <small>100+ shortcuts</small>
+            </a>
+            <a href="photoshop-shortcuts.html" class="guide-card">
+                <img src="icons/photoshop-icon.png" alt="Photoshop">
+                <span>Photoshop</span>
+                <small>70+ shortcuts</small>
+            </a>
+            <a href="slack-shortcuts.html" class="guide-card">
+                <img src="icons/slack-icon.png" alt="Slack">
+                <span>Slack</span>
+                <small>50+ shortcuts</small>
+            </a>
+            <a href="zoom-shortcuts.html" class="guide-card">
+                <img src="icons/zoom-icon.png" alt="Zoom">
+                <span>Zoom</span>
+                <small>40+ shortcuts</small>
+            </a>
+            <a href="windows-shortcuts.html" class="guide-card">
+                <img src="icons/windows-icon.png" alt="Windows">
+                <span>Windows</span>
+                <small>80+ shortcuts</small>
+            </a>
         </div>
         
-        <div class="sonic-badge">
-            <span>⚡ TYPE SONIC</span> • Type faster, work smarter
+        <h3 style="margin: 30px 0 15px;">🎮 Practice Games</h3>
+        <div class="games-grid">
+            <a href="game-shortcut-golf.html" class="game-card">
+                <img src="icons/game-icon.png" alt="Shortcut Golf">
+                <span>Shortcut Golf</span>
+                <small>Fewest strokes</small>
+            </a>
+            <a href="game-shortcut-match.html" class="game-card">
+                <img src="icons/game-icon.png" alt="Shortcut Match">
+                <span>Shortcut Match</span>
+                <small>Memory game</small>
+            </a>
+            <a href="game-shortcut-duel.html" class="game-card">
+                <img src="icons/game-icon.png" alt="Shortcut Duel">
+                <span>Shortcut Duel</span>
+                <small>VS Computer</small>
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 ⚡ TYPE SONIC • Free typing tests & keyboard shortcut guides</p>
+            <div class="attribution">
+                <a href="https://www.flaticon.com/free-icons/gmail" title="gmail icons">Gmail icons created by Freepik - Flaticon</a> • 
+                <a href="https://www.flaticon.com/free-icons/outlook" title="outlook icons">Outlook icons created by Freepik - Flaticon</a> • 
+                <a href="https://www.flaticon.com/free-icons/excel" title="excel icons">Excel icons created by Freepik - Flaticon</a> • 
+                <a href="https://www.flaticon.com/free-icons/word" title="word icons">Word icons created by Freepik - Flaticon</a> • 
+                <a href="https://www.flaticon.com/free-icons/photoshop" title="photoshop icons">Photoshop icons created by Freepik - Flaticon</a> • 
+                <a href="https://www.flaticon.com/free-icons/slack" title="slack icons">Slack icons created by Freepik - Flaticon</a> • 
+                <a href="https://www.flaticon.com/free-icons/zoom" title="zoom icons">Zoom icons created by Freepik - Flaticon</a> • 
+                <a href="https://www.flaticon.com/free-icons/windows" title="windows icons">Windows icons created by Freepik - Flaticon</a> • 
+                <a href="https://www.flaticon.com/free-icons/typing" title="typing icons">Typing icons created by Freepik - Flaticon</a> • 
+                <a href="https://www.flaticon.com/free-icons/game" title="game icons">Game icons created by Freepik - Flaticon</a>
+            </div>
         </div>
     </div>
 
