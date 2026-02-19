@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,7 @@
     <title>Excel Keyboard Shortcuts | Type Sonic Cheat Sheet</title>
     <meta name="description" content="Master Microsoft Excel with 100+ keyboard shortcuts. Complete cheat sheet for Windows and Mac. Boost your spreadsheet speed.">
     <style>
+        /* Keep all the same styles as before */
         * {
             margin: 0;
             padding: 0;
@@ -33,6 +34,15 @@
             margin-left: auto;
             margin-right: auto;
             text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .header h1 img {
+            width: 60px;
+            height: 60px;
         }
         
         .header p {
@@ -147,20 +157,21 @@
         
         .guide-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
             margin: 40px 0;
         }
         
         .guide-card {
             background: white;
-            padding: 20px;
+            padding: 20px 15px;
             border-radius: 10px;
             text-align: center;
             text-decoration: none;
             color: #333;
             border: 2px solid transparent;
-            transition: transform 0.2s, border-color 0.2s;
+            transition: all 0.3s;
+            display: block;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         
@@ -169,20 +180,55 @@
             border-color: #FF6B6B;
         }
         
-        .guide-card span {
-            font-size: 2.5em;
-            display: block;
+        .guide-card img {
+            width: 48px;
+            height: 48px;
             margin-bottom: 10px;
         }
         
-        .guide-card h4 {
-            font-size: 1.2em;
-            margin-bottom: 5px;
+        .guide-card span {
+            display: block;
+            font-weight: 600;
         }
         
-        .guide-card p {
+        .guide-card small {
             color: #666;
-            font-size: 0.9em;
+            font-size: 0.8em;
+        }
+        
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0 30px;
+        }
+        
+        .game-card {
+            background: linear-gradient(135deg, #fff5f5, #f0fcfb);
+            padding: 20px 15px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+            display: block;
+        }
+        
+        .game-card:hover {
+            transform: translateY(-5px);
+            border-color: #4ECDC4;
+        }
+        
+        .game-card img {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 10px;
+        }
+        
+        .game-card span {
+            display: block;
+            font-weight: 600;
         }
         
         .cta-section {
@@ -233,6 +279,24 @@
             font-weight: bold;
         }
         
+        .attribution {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #999;
+            line-height: 1.8;
+        }
+        
+        .attribution a {
+            color: #999;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        
+        .attribution a:hover {
+            color: #FF6B6B;
+            text-decoration: underline;
+        }
+        
         @media (max-width: 600px) {
             .header h1 {
                 font-size: 2.2em;
@@ -259,7 +323,11 @@
 <body>
     <div class="header">
         <div class="sonic-badge">⚡ TYPE SONIC SHORTCUTS</div>
-        <h1>Excel Keyboard Shortcuts</h1>
+        <h1>
+            <!-- DIRECT FLATICON LINK - NO DOWNLOAD NEEDED -->
+            <img src="https://cdn-icons-png.flaticon.com/512/15465/15465638.png" alt="Excel">
+            Excel Keyboard Shortcuts
+        </h1>
         <p>100+ shortcuts • Windows & Mac • Printable cheat sheet</p>
     </div>
     
@@ -576,29 +644,61 @@
             <h3 style="text-align: center; margin-bottom: 30px;">📚 More Shortcut Guides</h3>
             <div class="guide-grid">
                 <a href="gmail-shortcuts.html" class="guide-card">
-                    <span>📧</span>
-                    <h4>Gmail</h4>
-                    <p>90+ shortcuts</p>
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+                    <span>Gmail</span>
+                    <small>90+ shortcuts</small>
+                </a>
+                <a href="outlook-shortcuts.html" class="guide-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732219.png" alt="Outlook">
+                    <span>Outlook</span>
+                    <small>80+ shortcuts</small>
+                </a>
+                <a href="word-shortcuts.html" class="guide-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Word">
+                    <span>Word</span>
+                    <small>100+ shortcuts</small>
                 </a>
                 <a href="photoshop-shortcuts.html" class="guide-card">
-                    <span>🎨</span>
-                    <h4>Photoshop</h4>
-                    <p>70+ shortcuts</p>
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732199.png" alt="Photoshop">
+                    <span>Photoshop</span>
+                    <small>70+ shortcuts</small>
                 </a>
                 <a href="slack-shortcuts.html" class="guide-card">
-                    <span>💬</span>
-                    <h4>Slack</h4>
-                    <p>50+ shortcuts</p>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111615.png" alt="Slack">
+                    <span>Slack</span>
+                    <small>50+ shortcuts</small>
                 </a>
                 <a href="zoom-shortcuts.html" class="guide-card">
-                    <span>📹</span>
-                    <h4>Zoom</h4>
-                    <p>40+ shortcuts</p>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111648.png" alt="Zoom">
+                    <span>Zoom</span>
+                    <small>40+ shortcuts</small>
                 </a>
                 <a href="windows-shortcuts.html" class="guide-card">
-                    <span>🪟</span>
-                    <h4>Windows</h4>
-                    <p>80+ shortcuts</p>
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/221_220.png" alt="Windows">
+                    <span>Windows</span>
+                    <small>80+ shortcuts</small>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Games Navigation -->
+        <div style="margin: 40px 0;">
+            <h3 style="text-align: center; margin-bottom: 30px;">🎮 Practice Games</h3>
+            <div class="games-grid">
+                <a href="game-shortcut-golf.html" class="game-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2942/2942789.png" alt="Shortcut Golf">
+                    <span>Shortcut Golf</span>
+                    <small>Fewest strokes</small>
+                </a>
+                <a href="game-shortcut-match.html" class="game-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3712/3712236.png" alt="Shortcut Match">
+                    <span>Shortcut Match</span>
+                    <small>Memory game</small>
+                </a>
+                <a href="game-shortcut-duel.html" class="game-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3176/3176366.png" alt="Shortcut Duel">
+                    <span>Shortcut Duel</span>
+                    <small>VS Computer</small>
                 </a>
             </div>
         </div>
@@ -612,7 +712,10 @@
         
         <div class="footer">
             <p>© 2026 <span>⚡ TYPE SONIC</span> • Free typing tests & keyboard shortcut guides</p>
-            <p style="margin-top: 10px;">Excel shortcuts • Gmail shortcuts • Photoshop shortcuts • Slack shortcuts • Zoom shortcuts • Windows shortcuts</p>
+            <p style="margin-top: 10px;">Excel shortcuts • Gmail shortcuts • Outlook shortcuts • Word shortcuts • Photoshop shortcuts • Slack shortcuts • Zoom shortcuts • Windows shortcuts</p>
+            <div class="attribution">
+                Icons by <a href="https://www.flaticon.com/authors/pocike" title="pocike">pocike</a> and <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>
+            </div>
         </div>
     </div>
 </body>
