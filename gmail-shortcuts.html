@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Keyboard Shortcuts | Type Sonic Cheat Sheet</title>
+    <meta name="description" content="Master Gmail with 90+ keyboard shortcuts from Type Sonic. Complete cheat sheet for Windows and Mac. Printable guide included.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+        }
+        
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .sonic-badge-header {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .intro-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left: 5px solid #FF6B6B;
+        }
+        
+        .intro-card h2 {
+            color: #FF6B6B;
+            margin-bottom: 15px;
+        }
+        
+        .enable-steps {
+            background: #fff5f5;
+            border-left: 4px solid #FF6B6B;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .enable-steps ol {
+            margin-left: 20px;
+        }
+        
+        .enable-steps li {
+            margin: 10px 0;
+        }
+        
+        .shortcut-section {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-bottom: 3px solid #4ECDC4;
+        }
+        
+        .shortcut-section h2 {
+            color: #333;
+            border-bottom: 2px solid #4ECDC4;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th {
+            background: #4ECDC4;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        tr:hover {
+            background: #f0fcfb;
+        }
+        
+        kbd {
+            background: #333;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            display: inline-block;
+            margin: 2px;
+            box-shadow: 0 2px 0 #111;
+            border-bottom: 2px solid #FF6B6B;
+        }
+        
+        .note {
+            background: #fff5f5;
+            border-left: 4px solid #FF6B6B;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .note strong {
+            color: #FF6B6B;
+        }
+        
+        .typing-teaser {
+            background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+            color: white;
+            padding: 50px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .typing-teaser h3 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        .typing-teaser p {
+            font-size: 1.3em;
+            margin-bottom: 25px;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #FF6B6B;
+            padding: 15px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3em;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 40px;
+        }
+        
+        .footer span {
+            color: #FF6B6B;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2.2em;
+            }
+            
+            table {
+                font-size: 0.9em;
+            }
+            
+            td, th {
+                padding: 8px;
+            }
+            
+            kbd {
+                padding: 2px 6px;
+                font-size: 0.8em;
+            }
+            
+            .typing-teaser {
+                padding: 30px 20px;
+            }
+            
+            .typing-teaser h3 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="sonic-badge-header">⚡ TYPE SONIC SHORTCUTS</div>
+        <h1>Gmail Keyboard Shortcuts</h1>
+        <p>The complete cheat sheet • 90+ shortcuts • Windows & Mac</p>
+    </div>
+    
+    <div class="container">
+        <div class="intro-card">
+            <h2>📧 Type Sonic's Guide to Gmail Mastery</h2>
+            <p>Stop reaching for your mouse. These 90+ Gmail shortcuts will save you hours every week. Learn them once, type at sonic speed forever.</p>
+            
+            <div class="enable-steps">
+                <h3>⚙️ Quick Setup: Enable Shortcuts in Gmail</h3>
+                <ol>
+                    <li>Click the gear icon <strong>⚙️</strong> in Gmail</li>
+                    <li>Select <strong>"See all settings"</strong></li>
+                    <li>Scroll down to <strong>"Keyboard shortcuts"</strong></li>
+                    <li>Select <strong>"Keyboard shortcuts on"</strong></li>
+                    <li>Click <strong>"Save Changes"</strong></li>
+                </ol>
+                <p style="margin-top: 15px;"><kbd>Shift</kbd> + <kbd>?</kbd> → View all shortcuts inside Gmail anytime</p>
+            </div>
+            
+            <div class="note">
+                <strong>🍎 Mac users:</strong> Replace <kbd>Ctrl</kbd> with <kbd>⌘ Command</kbd> in all shortcuts
+            </div>
+        </div>
+        
+        <!-- Navigation Shortcuts -->
+        <div class="shortcut-section">
+            <h2>📍 Navigation</h2>
+            <table>
+                <tr><th>Shortcut</th><th>Action</th></tr>
+                <tr><td><kbd>g</kbd> then <kbd>i</kbd></td><td>Go to Inbox</td></tr>
+                <tr><td><kbd>g</kbd> then <kbd>s</kbd></td><td>Go to Starred</td></tr>
+                <tr><td><kbd>g</kbd> then <kbd>t</kbd></td><td>Go to Sent</td></tr>
+                <tr><td><kbd>g</kbd> then <kbd>d</kbd></td><td>Go to Drafts</td></tr>
+                <tr><td><kbd>g</kbd> then <kbd>a</kbd></td><td>Go to All mail</td></tr>
+                <tr><td><kbd>/</kbd></td><td>Search emails</td></tr>
+                <tr><td><kbd>j</kbd></td><td>Newer conversation</td></tr>
+                <tr><td><kbd>k</kbd></td><td>Older conversation</td></tr>
+                <tr><td><kbd>o</kbd> or <kbd>Enter</kbd></td><td>Open conversation</td></tr>
+                <tr><td><kbd>u</kbd></td><td>Back to list</td></tr>
+            </table>
+        </div>
+        
+        <!-- Compose & Reply -->
+        <div class="shortcut-section">
+            <h2>✏️ Compose & Reply</h2>
+            <table>
+                <tr><th>Shortcut</th><th>Action</th></tr>
+                <tr><td><kbd>c</kbd></td><td>New message</td></tr>
+                <tr><td><kbd>d</kbd></td><td>New message in new tab</td></tr>
+                <tr><td><kbd>r</kbd></td><td>Reply</td></tr>
+                <tr><td><kbd>a</kbd></td><td>Reply all</td></tr>
+                <tr><td><kbd>f</kbd></td><td>Forward</td></tr>
+                <tr><td><kbd>Ctrl</kbd> + <kbd>Enter</kbd></td><td>Send</td></tr>
+                <tr><td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>c</kbd></td><td>Add CC</td></tr>
+                <tr><td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>b</kbd></td><td>Add BCC</td></tr>
+            </table>
+        </div>
+        
+        <!-- Actions -->
+        <div class="shortcut-section">
+            <h2>⚡ Quick Actions</h2>
+            <table>
+                <tr><th>Shortcut</th><th>Action</th></tr>
+                <tr><td><kbd>e</kbd></td><td>Archive</td></tr>
+                <tr><td><kbd>m</kbd></td><td>Mute</td></tr>
+                <tr><td><kbd>x</kbd></td><td>Select conversation</td></tr>
+                <tr><td><kbd>s</kbd></td><td>Toggle star</td></tr>
+                <tr><td><kbd>!</kbd></td><td>Report spam</td></tr>
+                <tr><td><kbd>#</kbd></td><td>Delete</td></tr>
+                <tr><td><kbd>z</kbd></td><td>Undo</td></tr>
+                <tr><td><kbd>Shift</kbd> + <kbd>i</kbd></td><td>Mark read</td></tr>
+                <tr><td><kbd>Shift</kbd> + <kbd>u</kbd></td><td>Mark unread</td></tr>
+                <tr><td><kbd>b</kbd></td><td>Snooze</td></tr>
+            </table>
+        </div>
+        
+        <!-- Formatting -->
+        <div class="shortcut-section">
+            <h2>🎨 Text Formatting</h2>
+            <table>
+                <tr><th>Shortcut</th><th>Action</th></tr>
+                <tr><td><kbd>Ctrl</kbd> + <kbd>b</kbd></td><td>Bold</td></tr>
+                <tr><td><kbd>Ctrl</kbd> + <kbd>i</kbd></td><td>Italic</td></tr>
+                <tr><td><kbd>Ctrl</kbd> + <kbd>u</kbd></td><td>Underline</td></tr>
+                <tr><td><kbd>Ctrl</kbd> + <kbd>k</kbd></td><td>Insert link</td></tr>
+                <tr><td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>7</kbd></td><td>Numbered list</td></tr>
+                <tr><td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>8</kbd></td><td>Bulleted list</td></tr>
+            </table>
+        </div>
+        
+        <!-- CTA to Typing Test -->
+        <div class="typing-teaser">
+            <h3>⚡ Ready to type at sonic speed?</h3>
+            <p>Take the free Type Sonic speed test • 60 seconds • See your WPM</p>
+            <a href="index.html" class="cta-button">🚀 Start Typing Test</a>
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 <span>⚡ TYPE SONIC</span> • Free typing tests & keyboard shortcut guides</p>
+            <p style="margin-top: 10px;">Type faster. Work smarter. Master your keyboard.</p>
+        </div>
+    </div>
+</body>
+</html>
